@@ -1,0 +1,185 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log and Reg</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+            background-image: url("2.png");
+		}
+		header {
+			
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		header a {
+			color: #fff;
+			text-decoration: none;
+			margin-left: 20px;
+		}
+		header a:hover {
+			text-decoration: underline;
+		}
+		.logo {
+			max-width: 100px;
+			margin-left: 20px;
+		}
+		.login-container {
+			display: flex;
+			margin: 0 auto;
+			padding: 100px;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+            
+
+		}
+		.login-box {
+			width: 33%;
+			padding: 20px;
+			margin: 20px;
+			background-color: #FE7C03;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		.login-box h2 {
+			font-size: 24px;
+			margin-bottom: 20px;
+            color: #FE7C03;
+            text-shadow: 2px 2px 4px #000000;
+		}
+		.login-box label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+            color: #FE7C03;
+            text-shadow: 2px 2px 4px #000000;
+		}
+		.login-box input[type="text"],
+		.login-box input[type="password"] {
+			width: 80%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+		.login-box button {
+			display: block;
+			margin: 0 auto;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			text-decoration: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.login-box button:hover {
+			background-color: #555;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 15px;
+			font-size: 16px;
+			margin: 10px;
+			text-decoration: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.btn:hover {
+			background-color: #22c1c3;
+		}
+		.logo {
+			width: 100px;
+			height: 100px;
+			background-color: #fff;
+			margin-left: 20px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 36px;
+			font-weight: bold;
+			color: #333;
+		}
+		header a {
+			color: #fff;
+			text-decoration: none;
+			margin-left: 20px;
+            font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+				CR
+		</div>
+		<nav>
+			<a href="home.php">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<a href="nlogreg.html">Logout</a>
+		</nav>
+	</header>
+	<div class="login-container">
+		<div class="login-box">
+			<h2>Student Login</h2>
+			<form action="nlog.php" method="post">
+			
+				<label for="student-username">Username:</label>
+				<input type="text" id="student-username" name="student-username" required>
+				<label for="student-password">Password:</label>
+				<input type="password" id="student-password" name="student-password" required>
+				<input type="submit" name="submit" class="btn" value="Login">
+				<a href="nstu-reg.php" class="btn">Sign up</a>
+			</form>
+		</div>
+		<div class="login-box">
+			<h2>Admin Login</h2>
+			<form action="admin-log.php" method="post">
+				<label for="campus-username">Username:</label>
+				<input type="text" id="campus-username" name="campus-username" required>
+				<label for="campus-password">Password:</label>
+				<input type="password" id="campus-password" name="campus-password" required>
+				<input type="submit" name="submit" class="btn" value="Login">
+				<a href="nfac-reg.php" class="btn">Sign up</a>
+			</form>
+		</div>
+		<div class="login-box">
+			<h2>Company Login</h2>
+			<form action="company-log.php" method="POST">
+				<label for="company-username">Username:</label>
+				<input type="text" id="company-username" name="company-username">
+				<label for="company-password">Password:</label>
+				<input type="password" id="company-password" name="company-password">
+				<input type="submit" name="submit" class="btn" value="Login">
+				<a href="ncom-reg.php" class="btn">Sign up</a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+	
